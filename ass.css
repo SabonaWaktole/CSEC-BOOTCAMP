@@ -1,0 +1,121 @@
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Header Styling */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border-bottom: 2px solid #ddd;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            /*align-items: center;*/
+            padding: 10px 20px;
+            background-color: #f4f4f4;
+            border-bottom: 2px solid #ddd;
+        }
+        .name{
+            width: 50px;
+        }
+        /* Logo Styling */
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+        
+        /* Search Bar Styling */
+        .search-bar {
+            display: flex;
+            align-items: left;
+        }
+        
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        .search-bar button {
+            padding: 5px 10px;
+            font-size: 16px;
+            margin-left: 5px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        
+        /* Grid Container Styling */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        /* Grid Item Styling */
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #ffffff1e;
+            border: 1px solid #dddddd72;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            width: 100%; /* Make images responsive within their grid cells */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .grid-item img :hover {
+            transform: scale(1.4);
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        
+        .grid-item p {
+            font-size: 16px;
+            color: #d14c4c;
+        }
+        .description{
+            font-size: 16px;
+            color: #d14c4c;
+        
+        }
+        .img.topright{
+            position: absolute;
+            top: 8px;
+            right: 16px;
+            height: 20%;
+            width: 20%;
+            
+        }
+        .img.topright :hover{
+            transform: scale(1.2);
+            transition: transform 0.3s ease-in-out;
+        }
